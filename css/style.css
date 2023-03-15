@@ -28,6 +28,7 @@ nav{
   background: rgb(243, 243, 243);
   height: 80px;
   width: 100%;
+  position: sticky;
 }
 .enlace{
   position: relative;
@@ -121,7 +122,7 @@ li a.active, li a:hover{
     margin-top: 12%;
 }
 #letrero-header{
-  font-size: 20px;
+  font-size: 40px;
 }
 
 .containercarousel{
@@ -189,6 +190,7 @@ footer {
    }
    #letrerocarousel{
     width: 100%;
+    position: sticky;
    }
    .card-container{
     width: 50%;
@@ -290,4 +292,85 @@ body#sevicios{
   background-repeat: no-repeat;
   background-position: center center;
   
+}
+
+
+
+
+/* acacacacac
+
+*/
+
+
+/*slider*/
+#carouselExampleIndicators{
+	position: relative;
+	height: 80vh;
+	width: 100%;
+  /* transform: skew(-5deg); */
+}
+#carouselExampleIndicators .carousel-inner{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: #000;
+}
+#carouselExampleIndicators .carousel-inner:before{
+	position: absolute;
+	content: '';
+	background: rgba(0, 0, 0, 0.45);
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item{
+	position: relative;
+	height: 100%;
+	width:100%;
+	background: url('../image/bogota.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2){
+	background: url('../image/bogota.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3){
+	background: url('../image/bogota.jpg');
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item .info{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: auto;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item h1{
+	height: auto;
+	color: #fff;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 5.5em;
+	font-weight: 750;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item p{
+	height: auto;
+	color: #ccc;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: 500;
 }
